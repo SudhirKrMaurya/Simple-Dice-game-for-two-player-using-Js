@@ -1,0 +1,70 @@
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Simple Dice game</title>
+</head>
+<body>
+    <style>
+        .turn{
+    width: 50%;
+  padding: 20px;
+  background-color: coral;
+        }
+    </style>
+    <div class="container">
+          <center><h2>Make first 100 score and win the match.</h2></center><br><br>
+    <div class="row">
+    <div class="col-sm-2"></div>
+   <div class="col-sm-3">
+<h2>Player -1</h2>
+
+<br>
+<label>Total Score</label><br>
+<input type="text" id="score-1"><br/><br/>
+<label>Current Score</label>
+<input type="text" id="current-score-1" style="padding-bottom: 50px">
+<br>
+<br>
+<p id="1turn" class="turn"> Turn </p> <br><br><br><br>
+   </div>
+   <div class="col-sm-3">
+       <img src=""  class="dice">
+   </div>
+   <div class="col-sm-3">
+<h2>Player-2</h2>
+<br>
+<label>Total Score </label><br>
+<input type="text" id="score-2"><br/><br/>
+<label>Current Score</label></br>
+<input type="text" id="current-score-2" style="padding-bottom: 50px">
+<br>
+<br>
+<p id="2turn" class="trun"> Turn</p> <br><br><br><br>
+
+    </div>
+</div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+</div>
+</div>
+<br><br>
+<div class="row" >
+        <div class="col-sm-4" ></div>
+    <div class="col-sm-6">
+        <h2 id="win"></h2>
+    </div>
+</div>
+<div class="row">
+        <div class="col-sm-5" ></div>
+    <div class="col-sm-4">
+        <input type="button" value="Play" onclick="play()" class="btn btn-primary" id="play"> &nbsp;&nbsp;
+        <input type="button" value="New Game" onclick="newGame()" class="btn btn-danger">
+    </div>
+</div>
+
+
+        <script src="diceApp.js"></script> 
+   </body>
+</html>
